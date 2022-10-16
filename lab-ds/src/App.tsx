@@ -2,6 +2,9 @@ import './styles/global.css';
 
 export function App() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <h1 className="font-bold text-lg text-cyan-500">Hello World</h1>
+      <button className="bg-cyan-500 font-medium px-4 rounded text-gray-100 hover:bg-gray-400">Enviar</button>
+    </>
   )
 }
