@@ -1,10 +1,16 @@
+import { Heading } from './components/Heading';
+import { Text } from './components/Text';
+import { Logo } from './Logo';
 import './styles/global.css';
 
 export function App() {
   return (
-    <>
-      <h1 className="font-bold text-lg text-cyan-500">Hello World</h1>
-      <button className="bg-cyan-500 font-medium px-4 rounded text-gray-100 hover:bg-gray-400">Enviar</button>
-    </>
+    <div className="w-screen h-screen bg-gray-900 flex items-center justify-center text-gray-100">
+      <Logo />
+      <Heading size="lg">
+        Ignite Lab
+      </Heading>
+      <Text size="lg">Faça login e comece a usar!</Text>
+    </div>
   )
 }
