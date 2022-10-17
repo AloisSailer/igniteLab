@@ -13,6 +13,8 @@ function TextInputRoot(props: TextInputRootProps) {
   )
 }
 
+TextInputRoot.displayName = 'TextInput.Root'
+
 export interface TextInputIconProps {
   children: ReactNode;
 }
@@ -20,10 +22,12 @@ export interface TextInputIconProps {
 function TextInputIcon(props: TextInputIconProps) {
   return (
     <Slot className="w-6 h-6 text-gray-400">
-
+      {props.children}
     </Slot>
   )
 }
+
+TextInputIcon.displayName = 'TextInput.Icon'
 
 export interface TextInputInputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
@@ -35,6 +39,8 @@ function TextInputInput(props: TextInputInputProps) {
     />
   )
 }
+
+TextInputInput.displayName = 'TextInput.Input'
 
 export const TextInput = {
   Root: TextInputRoot,
